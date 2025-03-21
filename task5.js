@@ -1,6 +1,11 @@
+/*
 // 1. task one
 for (let i = 0; i <= 5; i++) {
-  console.log("*".repeat(i));
+  let print = " ";
+  for (let j = 0; j < i; j++) {
+    print += "* ";
+  }
+  console.log(print);
 }
 
 // 2. Craete Multiplication Table (Using for loop)
@@ -20,3 +25,4 @@ for (let i = 1; i <= 20; i++) {
   if (i % 3 === 0) continue;
   console.log(i);
 }
+*/
