@@ -35,7 +35,7 @@ function isPalindrome(str) {
 }
 
 isPalindrome("mom");
-*/
+
 // Write a Function to Find Factorial of a Number
 
 function factorial(n) {
@@ -53,3 +53,22 @@ function factorial(n) {
 }
 
 factorial(5);
+
+
+// 5. Write a function to Count Vowels in a String
+
+function capitalizeWords(sentence) {
+  let allVowel = 0;
+  let vowel = "aeiouAEIOU";
+  for (let i of sentence) {
+    if (vowel.includes(i)) {
+      allVowel += 1;
+    }
+  }
+  console.log(allVowel);
+}
+
+capitalizeWords("hello");
+capitalizeWords("javaScript");
+
+*/
