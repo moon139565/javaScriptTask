@@ -36,3 +36,20 @@ function isPalindrome(str) {
 
 isPalindrome("mom");
 */
+// Write a Function to Find Factorial of a Number
+
+function factorial(n) {
+  let res = 1;
+  let step = `${n}! =  `;
+  for (i = n; i >= 1; i--) {
+    res *= i;
+    step += i;
+    if (i > 1) {
+      step += "*";
+    }
+  }
+  console.log(res);
+  console.log((step += ` = ${res}`));
+}
+
+factorial(5);
