@@ -82,4 +82,22 @@ function capitalizeWords(sentence) {
 }
 let gotSentence = "hello i'm moon";
 console.log(capitalizeWords(gotSentence));
+
+// Use an IIFE to Print “Hello, JavaScript!”
+
+(() => {
+  console.log("Hello, JavaScript!");
+})();
+
+
+// Create a Simple Callback Function
+function greet(name, callback) {
+  console.log("hello " + name);
+
+  callback();
+}
+function callback() {
+  console.log("how are you");
+}
+greet("mr moon", callback);
 */
