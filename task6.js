@@ -57,7 +57,7 @@ factorial(5);
 
 // 5. Write a function to Count Vowels in a String
 
-function capitalizeWords(sentence) {
+function countVowels(sentence) {
   let allVowel = 0;
   let vowel = "aeiouAEIOU";
   for (let i of sentence) {
@@ -68,7 +68,18 @@ function capitalizeWords(sentence) {
   console.log(allVowel);
 }
 
-capitalizeWords("hello");
-capitalizeWords("javaScript");
+countVowels("hello");
+countVowels("javaScript");
 
+
+
+// Write a Function to Capitalize the First Letter of Each Word in a Sentence
+function capitalizeWords(sentence) {
+  return sentence
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+let gotSentence = "hello i'm moon";
+console.log(capitalizeWords(gotSentence));
 */
